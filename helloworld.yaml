@@ -1,5 +1,4 @@
 ---
---- adding comment
 - hosts: ip
   gather_facts: no
   tasks:
