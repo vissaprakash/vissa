@@ -7,7 +7,7 @@
       update_cahce: yes
   - name: install appche
     apt:
-      install apache2
+      name: apache2
       state: present
 
 
