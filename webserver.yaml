@@ -4,7 +4,7 @@
   tasks:
   - name: update packages
     apt:
-      update_cahce: yes
+      update_cache: yes
   - name: install appche
     apt:
       name: apache2
