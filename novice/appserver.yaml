@@ -1,5 +1,5 @@
 ---
-- hosts: myhosts
+- hosts: webserver
   become: yes
   tasks: 
     name: "update apt repo"
