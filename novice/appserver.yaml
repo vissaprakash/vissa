@@ -14,7 +14,7 @@
       dest: /var/lib/tomcat7/webapps/jenkin.war
       url: http://ftp-chi.osuosl.org/pub/jenkins/war-stable/2.138.1/jenkins.war
   - name: restart tomcat
-    service:
+    apt:
       name: tomcat7
       state: restart
           
