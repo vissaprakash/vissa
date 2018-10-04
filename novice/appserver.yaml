@@ -1,0 +1,11 @@
+---
+- hosts: webserver
+  become: yes
+  tasks: 
+    name: "update apt repo"
+    apt:
+      update_cache: yes
+    name: install tomcat7
+    apt:
+      name: tomcat7
+      state: present
