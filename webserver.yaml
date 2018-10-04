@@ -9,11 +9,16 @@
     apt:
       name: apache2
       state: present
+    notify:
+    - Restart Apache
   - name: create the home page
     copy:
       dest: /var/www/index/index.html
       content: "<h1> welcome to apache (controlled by anible) </h1>"  
-  - name: restart apache
+    notify: 
+    - Restart Apache
+  handlers:    
+  - name: Restart Apache
     service:
       name: apache2
       state: restarted
